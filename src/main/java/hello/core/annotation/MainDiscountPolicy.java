@@ -1,6 +1,7 @@
 package hello.core.annotation;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
 import java.lang.annotation.*;
 
@@ -9,5 +10,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Qualifier("mainDiscountPolicy")
+@Component
 public @interface MainDiscountPolicy {
 }
